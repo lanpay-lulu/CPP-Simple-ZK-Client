@@ -71,6 +71,9 @@ void ZkClient::close() {
 	}	
 }
 
+/**
+* This function will register a node watcher.
+*/
 int ZkClient::getData() {
     // \param 1 watch if nonzero. A watch will be set at the server to notify the client if the node changes.
     // \param &_client_type will be passed to the get_complet_func function.
